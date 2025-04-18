@@ -1,0 +1,31 @@
+/* Create this new file for global button styles */
+.btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff4d6d !important;
+  border-color: #ff4d6d !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #ff3a5f !important;
+  border-color: #ff3a5f !important;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255, 77, 109, 0.4);
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-3px);
+}
