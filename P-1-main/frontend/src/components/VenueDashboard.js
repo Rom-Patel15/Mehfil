@@ -106,7 +106,7 @@ const VenueDashboard = () => {
                 <div key={show._id} className="request-item">
                   <div className="request-info">
                     <h4>{show.showTitle}</h4>
-                    <p>Performer: {show.performer}</p>
+
                     <p>Date: {show.date} • {show.time}</p>
                   </div>
                   <div className="request-actions">

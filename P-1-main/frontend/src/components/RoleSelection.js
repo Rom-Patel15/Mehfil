@@ -12,9 +12,7 @@ const RoleSelection = () => {
       navigate('/performer/dashboard');
     } else if (role === 'audience') {
       navigate('/audience/dashboard');
-    } else if (role === 'admin') {
-      navigate('/admin/dashboard');
-    }
+    } 
   };
 
   return (
@@ -25,14 +23,9 @@ const RoleSelection = () => {
       </p>
       
       <div className="role-cards">
-        <div className="role-card">
-          <div className="role-icon admin-icon">
-            <span>🏛️</span>
-          </div>
-          <h3>Admin</h3>
-          <p>Manage all events, users, and analytics for the comedy platform.</p>
-          <button className="btn btn-primary" onClick={() => handleRoleSelect('admin')}>Select</button>
-        </div>
+       
+          
+         
         
         <div className="role-card">
           <div className="role-icon venue-icon">

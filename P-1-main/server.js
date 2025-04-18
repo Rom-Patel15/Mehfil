@@ -101,7 +101,7 @@ app.get('/api/shows/performer/:performer', async (req, res) => {
     const shows = await Proposal.find({ 
       performer: req.params.performer
     });
-    console.log('Performer shows found:', shows.length);
+    // console.log('Performer shows found:', shows.length);
     res.status(200).json(shows);
   } catch (err) {
     console.error('Error fetching performer shows:', err);
