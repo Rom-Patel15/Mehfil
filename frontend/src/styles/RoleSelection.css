@@ -1,0 +1,132 @@
+.role-selection {
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1e2a4a; /* Lighter shade of blue */
+}
+
+.role-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.role-description {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  color: #b8b8b8;
+}
+
+.role-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.role-card {
+  background-color: rgba(30, 30, 46, 0.7);
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.role-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.admin-icon {
+  background-color: rgba(255, 77, 77, 0.2);
+}
+
+.venue-icon {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.performer-icon {
+  background-color: rgba(138, 43, 226, 0.2);
+}
+
+.audience-icon {
+  background-color: rgba(0, 255, 127, 0.2);
+}
+
+.role-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.role-card p {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.select-btn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 120px; /* Fixed width for consistency */
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.select-btn:hover {
+  background-color: #ff4d6d;
+  border-color: #ff4d6d;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255, 77, 109, 0.4);
+}
+
+/* Remove any specific button styles for individual roles if they exist */
+
+.login-prompt {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.login-link {
+  color: #ff4d6d;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .role-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .role-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+/* Page transition animations */
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Make sure content is visible during transitions */
+.page-transition-enter-done {
+  opacity: 1;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  position: relative;
+  overflow: hidden;
+}
+
+.role-section-wrapper {
+  background-color: #1e2a4a; /* Lighter shade of blue */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.testimonials-section-wrapper {
+  background-color: #1e2a4a; /* Same lighter shade of blue */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cta-section-wrapper {
+  background-color: #1a1a2e; /* Darker blue for contrast */
+  width: 100%;
+  padding: 20px 0;
+}
